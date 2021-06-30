@@ -1,3 +1,44 @@
+.about-main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 60px 80px 80px 80px;
+}
+
+.left,
+.right {
+  width: 50%;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.link-element {
+  color: black;
+}
+
+.sub-head {
+  margin: 0;
+}
+
+.details {
+  margin: 10px 0 32px 0;
+}
+
+.about-anime {
+  width: 520px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
 .vector-frame {
   position: absolute;
   z-index: -10;
@@ -15,5 +56,23 @@
 @media only screen and (max-width: 640px) {
   .vector-frame {
     width: 90%;
+  }
+
+  .sub-head {
+    width: 80%;
+  }
+
+  .sub-head > p {
+    font-size: 1.2em;
+    line-height: 1.2em;
+  }
+
+  .about-main {
+    padding: 50px 32px;
+  }
+
+  .left,
+  .right {
+    width: 100%;
   }
 }
